@@ -13,3 +13,10 @@ function manualCall(phone){
 	
 	iframe.contentWindow.postMessage(mensaje, 'https://vcl8-cloud.vocalcom-latam.com');
 }
+
+function transferCall(){
+	const iframe = document.getElementById("hucc_iframe");
+	const mensaje = {
+		accion: 'transferCall'
+	};
+}
